@@ -1,16 +1,17 @@
 
 "use client"
+import React from "react";
 import Image from "next/image";
 import yafeh from "../../images/yafeh.jpg"
 import { Typewriter, useTypewriter } from "react-simple-typewriter";
 export const Home=()=> {
   const[typeEffect]=useTypewriter({
     words:["Hi","I am Muhammad Yafeh"],
-    loop:true,
+  
     typeSpeed:200,
     delaySpeed:300
   })
-  console.log(typeEffect)
+  
   return (
     <main>
       
@@ -34,7 +35,7 @@ Check out my portfolio , and lets create something extraordinary together!
 
   );
 }
-export default Home 
+export default Home; 
  
 
 
