@@ -3,8 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import yafeh from "../../images/yafeh.jpg"
-import { Typewriter, useTypewriter } from "react-simple-typewriter";
-export const Home=()=> {
+import {  useTypewriter } from "react-simple-typewriter";
+  const Home=()=> {
   const[typeEffect]=useTypewriter({
     words:["Hi","I am Muhammad Yafeh"],
   
