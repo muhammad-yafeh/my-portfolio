@@ -1,4 +1,13 @@
 import type { Metadata } from "next";
+import { IoMdMenu } from "react-icons/io";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
@@ -18,7 +27,24 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar/>
+        <div className="hidden lg:block">
+          <Navbar/>
+          </div>
+        <div className="lg:hidden m-3 ">
+      <Sheet>
+  <SheetTrigger><IoMdMenu /></SheetTrigger>
+  <SheetContent>
+    <SheetHeader>
+      <SheetTitle>Muhammad Yafeh Portfolio</SheetTitle>
+      <SheetDescription>
+       
+         <Navbar/>
+      
+      </SheetDescription>
+    </SheetHeader>
+  </SheetContent>
+</Sheet>
+        </div>
       {children}
       <Footer/>
       </body>

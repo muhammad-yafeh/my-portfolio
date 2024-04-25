@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import yafeh from "../../images/yafeh.jpg"
-import {  useTypewriter } from "react-simple-typewriter";
+import {useTypewriter} from "react-simple-typewriter";
   const Home=()=> {
   const[typeEffect]=useTypewriter({
     words:["Hi","I am Muhammad Yafeh"],
@@ -14,7 +14,6 @@ import {  useTypewriter } from "react-simple-typewriter";
   
   return (
     <main>
-      
       <div className="flex-1 p-5 ">
 
       <div>
